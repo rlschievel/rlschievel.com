@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import NavButton from './navbutton';
-import './navbar.css';
+import Clock from './Clock';
+import './NavBar.css';
 
 class NavBar extends Component{
   render() {
     return (
       <div className="navbar">
-        {this.props.children}
+        <div className="navbuttons">
+          {this.props.children}
+        </div>
+        <div className="navclock">
+          <Clock />
+        </div>        
       </div>
     );    
   }

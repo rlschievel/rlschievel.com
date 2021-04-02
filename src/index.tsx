@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import NavBar from './Components/navbar';
-import NavButton from './Components/navbutton';
+import NavBar from './Components/NavBar';
+import NavButton from './Components/NavButton';
 
 ReactDOM.render(
   <React.StrictMode>

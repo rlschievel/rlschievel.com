@@ -3,7 +3,21 @@
   overflow: hidden;
   position: sticky;
   position: -webkit-sticky;
+  /* display: inline-block; */
   top: 0;
+}
+
+.navbuttons{
+  display: inline-block;
+}
+
+.navclock{  
+  color: rgb(40, 255, 40);
+  float: right;
+  vertical-align: middle;
+  font-size: x-large;
+  text-align: center;
+  padding: 10px;
 }
 
 .navbutton{
