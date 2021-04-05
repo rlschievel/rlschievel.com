@@ -19,17 +19,26 @@ class Clock extends React.Component<IProps, IState>{
   }
 
   getCurrentTime() {
-    var now:Date = new Date();
-    var hour:String = now.getHours() < 10 ? "0" + now.getHours().toString() : now.getHours().toString();
+    var now:Date = new Date();    
+    var hour:String;
     var minute:String = now.getMinutes() < 10 ? "0" + now.getMinutes().toString() : now.getMinutes().toString();
     var second:String = now.getSeconds() < 10 ? "0" + now.getSeconds().toString() : now.getSeconds().toString();
-    var currentTime:String = hour + ":" + minute + ":" + second;
+    var hourNum:number = now.getHours();
+    var currentTime:String = minute + ":" + second;
+
+    if (hourNum > 12) {
+      hour = (hourNum - 12).toString();
+      currentTime = hour + ":" + currentTime + " PM";
+    } else {
+      hour = hourNum.toString();
+      currentTime = hour + ":" + currentTime + " AM";
+    }
 
     return currentTime;
   }
 
   componentDidMount() {
-    this.timer = window.setInterval(this.tick, 1000)
+    this.timer = window.setInterval(this.tick, 10)
   }
 
   componentWillUnmount() {
