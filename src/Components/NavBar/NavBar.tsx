@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Clock from './Clock';
+import Clock from '../Clock/Clock';
 import './NavBar.css';
 
 class NavBar extends Component{
