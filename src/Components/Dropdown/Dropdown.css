@@ -1,0 +1,46 @@
+.dropdownbutton {
+  background-color: inherit;
+  color: rgb(200,200,200);
+  font-size: 1.5rem;
+  padding: 0rem 0.5rem;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.dropdownbutton p{
+  margin: 0;
+  color: rgb(200,200,200);
+}
+
+.dropdownbutton p:hover{
+  color: rgb(255, 255, 255);
+}
+
+.dropdownbutton:hover {
+  color: rgb(255, 255, 255);
+}
+
+.dropdownmenu {
+  position: absolute;
+  color: black;
+  background-color: white;
+  white-space: nowrap;
+  top: 100%;
+  left: 0;
+}
+
+.menuitem{
+  width: 100%;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+  background-color: white;
+  color: black;
+}
+
+.menuitem:hover{
+  background-color: lightgray;
+}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Clock from './Clock';
 import './NavBar.css';
 
 class NavBar extends Component{
@@ -9,9 +8,6 @@ class NavBar extends Component{
         <div className="navbuttons">
           {this.props.children}
         </div>
-        <div className="navclock">
-          <Clock />
-        </div>        
       </div>
     );    
   }

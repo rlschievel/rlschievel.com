@@ -1,0 +1,38 @@
+.navbar{
+  background-color: rgb(25,25,25);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.navbuttons{
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  height: 100%;
+}
+
+.navclock{  
+  color: rgb(40, 255, 40);
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.navbutton{
+  background-color: inherit;
+  color: rgb(200,200,200);
+  font-size: 2rem;
+  margin: 0rem 0.2rem;
+  cursor: pointer;
+}
+
+.navbutton:hover {
+  color: rgb(255,255,255);
+}
+

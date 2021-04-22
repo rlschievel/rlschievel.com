@@ -47,9 +47,7 @@ class Clock extends React.Component<IProps, IState>{
 
   render() {
     return(
-      <div>
-        {this.state.time}
-      </div>
+      this.state.time
     );
   }
 

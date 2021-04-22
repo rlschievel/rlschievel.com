@@ -1,16 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import NavBar from './Components/NavBar';
-import NavButton from './Components/NavButton';
+import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>
-    <NavBar>
-      <NavButton>Home</NavButton>
-      <NavButton>Test</NavButton>
-    </NavBar>
-    <p>Welcome to rlschievel.com!</p>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
