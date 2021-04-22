@@ -1,0 +1,37 @@
+.resultsTable, table, th, td{
+  border: 1px solid rgb(200, 200, 200);
+  border-collapse: collapse;
+  color: white;
+  table-layout: fixed;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+th {
+  background-color: black;
+}
+
+th:last-child {
+  text-align: left;
+}
+
+td {
+  background-color: rgb(20, 20, 20);
+}
+
+th, td {
+  padding: 0.5rem 0.5rem;
+}
+
+td:last-child {
+  width: 100%;
+  text-align: left;
+}
+
+.resultsTitle{
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  margin: 0rem 0.2rem;
+}

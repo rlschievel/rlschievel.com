@@ -2,6 +2,7 @@ import React from 'react';
 import './Dropdown.css';
 
 interface IProps{
+  onClick?:Function,
 }
 
 interface IState{
@@ -9,19 +10,15 @@ interface IState{
 }
 
 class MenuItem extends React.Component<IProps, IState>{
-  constructor(props:IProps){
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
+  handleClick = () => {
+    if(this.props.onClick)
+      this.props.onClick()
   }
 
   render(){
     return(
-      <div className="menuitem" onClick={() => this.handleClick}>{this.props.children}</div>
+      <div className="menuitem" onClick={this.handleClick}>{this.props.children}</div>
     )
-  }
-
-  handleClick(){
-    console.log("menuitem clicked");
   }
 }
 
